@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images\Christmas-Color-7-Santa-Claus-Curved.png">
+    <title>CHRISTMAS</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+
+  />
+  <link href="https://db.onlinewebfonts.com/c/57ae2f722eabc559ab28b2a8b14babf0?family=Merry+Christmas" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div class="mainbg" id=home style="float: left;">
+     
+        <header>
+            <nav>
+                <div class="navchrist"style="float: left; width: 50%; padding-top: 30px; padding-left: 150px;font-size: 18px;">
+                <a href="#" style="    text-decoration: none;
+                color: white;">Christmas</a>
+            </div>
+                <div>
+                    <ul class="navul"style="display: inline-block;
+                    margin-left: 263px;padding-top: 18px;">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#history">History</a></li>
+                        <li><a href="#facts">Facts</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+        </header>
+       <div>
+        <h1 class=" animate__animated animate__fadeInTopLeft home__title1" id="merry">Merry</h1>
+        <h1 class=" animate__animated animate__fadeInBottomRight home__title2" id="christ">Christmas</h1>
+       </div>
+        <div class="waveinfo" style="position: absolute;bottom: 0;    ">
+            <!-- wave design part -->
+        
+            <div class="wave" id="wave1" style="--i:1;"></div>
+            <div class="wave" id="wave2" style="--i:2;"></div>
+            <div class="wave" id="wave3" style="--i:3;"></div>
+            <div class="wave" id="wave4" style="--i:4;"></div>
+       
+        </div>
+    </div>
+    
+    <div class="history" id="history">
+        <div class="hisimage">
+        <img src="images\istockphoto-1422724334-612x612.jpg" alt=""
+        style="border-radius: 30px;">
+    </div>
+    <div class="hispara">
+        <h1>HISTORY</h1>
+        <p>
+Christmas, with its origins in the Christian celebration of Jesus Christ's birth, has evolved into a globally celebrated holiday that weaves together religious, cultural, and secular influences. Initially tied to the Roman festival of Saturnalia and the winter solstice, Christmas faced historical opposition but experienced a Victorian-era resurgence, shaping the holiday's modern character with traditions like the Christmas tree and Dickensian themes of generosity. The international popularity of Santa Claus and the widespread adoption of gift-giving further underscore the holiday's fusion of diverse customs. Today, Christmas transcends its religious roots, representing a time for unity, generosity, and global festivities, where cultures blend and adapt, creating a tapestry of traditions that reflect the ever-changing nature of this cherished celebration.</p>
+    </div>
+    </div>
+    <div class="cards" id="facts">
+        <h1 class="facts">FACTS</h1>
+        <div class="container1">
+            <div class="card1">
+              <div class="front1"><img src="images\holidays-outdoor-christmas-tree-vertical-thomas-woolworth.jpg" alt=""></div>
+              <div class="back1">
+                <h1> Origin of Christmas Tree</h1>
+                <p>
+                    The tradition of decorating Christmas trees originated in 16th-century Germany. It became widely popular in the 19th century and has since become a symbol of the holiday season.</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="card">
+              <div class="front"><img src="https://twigspaper.com/cdn/shop/products/61a56dbed5a82c38691b41b0_Happy_Holidays_Single_Card_Vertical_White.jpg?v=1678025773&width=1445" alt=""></div>
+              <div class="back">
+                <h1> Christmas Cards Tradition:</h1>
+                <p>
+The first commercial Christmas cards were commissioned in London in 1843. Sir Henry Cole, the director of the Victoria and Albert Museum, wanted a card he could send to friends and acquaintances to wish them a "Merry Christmas."</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="card">
+              <div class="front"><img src="images\vector-illustration-santa-claus-600nw-1235266156.webp" alt=""></div>
+              <div class="back">
+                <h1>Santa Claus Evolution:</h1>
+                <p>
+                    The modern image of Santa Claus is a result of various influences, including the Dutch figure Sinterklaas, British Father Christmas, and the 1823 poem "A Visit from St. Nicholas" (commonly known as "The Night Before Christmas").</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="card">
+              <div class="front"><img src="images\kissing-under-the-mistletoe-is-a-tradition-vector.jpg" alt=""></div>
+              <div class="back">
+                <h1> Mistletoe Tradition:</h1>
+                <p>
+                    The custom of kissing under the mistletoe has ancient roots. In Norse mythology, mistletoe was associated with love and friendship, and enemies who met under it were supposed to lay down their arms and embrace.</p>
+              </div>
+            </div>
+          </div>
+          
+    </div>
+    <div class="footer">
+        <div style="background: rgb(122,192,202); width: 100%;height: 6em;text-align: center;">
+            <br>
+            <h6 style="font-size: smaller;">Copyrights</h6>
+            <h6 style="font-size: smaller;">Designed and Developed by <a href="https://www.linkedin.com/in/arathi-viju-462614276" style="text-decoration: none;">Arathi Viju</a></h6>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let wave1=document.getElementById('wave1');
+        let wave2=document.getElementById('wave2');
+        let wave3=document.getElementById('wave3');
+        let wave4=document.getElementById('wave4');
+        window.addEventListener('scroll',function(){
+            let value=window.scrollY;
+
+            wave1.style.backgroundPositionX=400+value*4+'px';
+            wave2.style.backgroundPositionX=400+value*-4+'px';
+            wave3.style.backgroundPositionX=400+value*2+'px';
+            wave4.style.backgroundPositionX=400+value*-2+'px';
+
+        })
+    </script>
+    <script src="https://app.embed.im/snow.js" defer></script>
+    
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          <script>
+            AOS.init();
+          </script>
+        
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</body>
+</html>

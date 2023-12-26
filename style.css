@@ -1,0 +1,462 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;500;600&display=swap");
+
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins',san-serif;
+}
+html, body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0.09px
+}
+
+.mainbg{
+    width:100%;
+   
+    height: 100vh;
+   
+    background-image:url("images/christmas-celebration-concept.jpg");
+    background-position:center center;
+	background-size:cover;
+    background-repeat:no-repeat;
+    position: relative;
+}
+.header ul {
+    list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  
+}
+header ul li{
+  
+    list-style: none;
+    margin-left: 50px;
+    float:left;
+}
+
+header ul li a{
+    display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 18px;
+    
+}
+header ul li a:hover
+
+{
+   
+    color:#3dc2e3
+
+}
+.waveinfo{
+    width:100%;
+    height:auto;
+}
+.wave{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:100px;
+    background: url("images/wave.png");
+    background-size:1000px 100px;
+    /* animation:animate 4s ease-in-out infinite; */
+    /* animation-delay: calc(var(--i)*0.25s); */
+}
+.wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    background-position-x: 400px;
+}
+.wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    background-position-x: 300px;
+}
+.wave#wave3{
+    z-index: 998;
+    opacity: 0.2;
+    background-position-x: 200px;
+}
+.wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    background-position-x: 100px;
+}
+@keyframes animate{
+    0%,100%
+    {
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(10px);
+    }
+}
+.history{
+    padding-top: 30px;
+    width: 100%;
+    height: 444px;
+    margin-top: 10px;
+}
+.history img{
+    margin-left: 30px;
+    width: 450px;
+    height:450px;
+}
+.history img{
+  width: 380px;
+  height: 380px;
+  background-size: cover;
+  -webkit-background-position: center;
+  background-position: center center;
+  margin: 20px;
+  box-shadow: 0 5px 5px 5px rgba(13, 110, 253, 0.2);
+  animation: animate 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}
+
+@keyframes animate {
+  0%, 100%{
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50%{
+      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+}
+.hisimage{
+    margin-top: 77px;
+    float: left;
+    width: 40%;
+    padding-left: 17px;
+}
+.hispara{
+    height: 543px;
+    width:60%;
+    padding-top: 30px;
+    color:rgba(52,110,134,255);
+    font-size: medium;
+    float: left;
+}
+.hispara p{
+    padding-top: 30px;
+}
+.hispara h1{
+    margin-top: 50px;
+    width: 60%;
+    position: relative;
+    color: rgba(118,195,204,255);
+    padding: 0 10px;
+
+}
+
+.hispara h1:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 0;
+  
+  transition: 0.5s;
+  left: 0;
+  bottom: -10px;
+}
+
+.hispara h1:hover:after {
+    background-color: rgba(241,230,148,255);
+  color: rgba(118,195,204,255);
+  width: 30%;
+}
+
+.cards{
+  
+    align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  color: aliceblue;
+  margin-top: 70px;
+  height: 700px;
+}
+.facts{
+    margin-top: 70px;
+    padding-left: 705px;
+    position: relative;
+    color: rgba(118,195,204,255);
+    
+}
+
+.container1 {
+    padding: 40px;
+    width: 350px;
+    height: 500px;
+    perspective: 800px;
+    float: left;
+    margin-left: 37px;
+  }
+  
+  .container1:hover > .card1 {
+    cursor: pointer;
+    transform: rotateY(180deg);
+  }
+  
+  .card1 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+  }
+  
+  .front1 img,
+  .back1 {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .front1  {
+    background-image: url("https://img.freepik.com/premium-photo/christmas-background-xmas-tree-with-snow-decorated-night-winter_887552-19336.jpg");
+  }
+  
+  .back1 {
+    background-color: rgba(51,126,147,255);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .container {
+    padding: 40px;
+    width: 350px;
+    height: 500px;
+    perspective: 800px;
+    float: left;
+  }
+  
+  .container:hover > .card {
+    cursor: pointer;
+    transform: rotateY(180deg);
+  }
+  
+  .card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+  }
+  
+  .front img,
+  .back {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  
+  
+  .back {
+    background-color: rgba(51,126,147,255);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  
+.footer{
+   width: 100%;
+   margin-top: auto;
+
+  }
+  .home__title1 {
+    color: var(--white-color);
+    font-size: 5em;
+    font-family: var(--second-font);
+    padding-left: 330px;;
+    padding-top: 2.0rem;
+    color: aliceblue;
+    font-family: "Merry Christmas";
+    font-style: italic;
+}
+.home__title2 {
+  color: var(--white-color);
+  font-size: 5em;
+  font-family: var(--second-font);
+  padding-left: 1000px;
+  padding-top: 200px;
+  margin-top: 1.5rem;
+  color: aliceblue;
+  font-family: "Merry Christmas";
+  font-style: italic;
+}
+@media screen and (max-width: 1430px) {
+  .cards{
+  
+    align-items: center;
+    justify-content: space-around;
+    color: aliceblue;
+    margin-top: 70px;
+    height: 900px;
+    width: 100%;
+    
+  
+  
+}.container1 {
+  width: 24%;
+  font-size: smaller;
+  display: block;
+  padding-left: 20px;
+  height: 500px;
+  perspective: 800px;
+  float: left;
+  
+}.container {
+  padding-left: 20px;
+  font-size: smaller;
+  width: 24%;  height: 500px;
+  perspective: 800px;
+  float: left;
+
+}
+.facts{
+  margin-top: 70px;
+  padding-left: 605px;
+  position: relative;
+  color: rgba(118,195,204,255);
+  
+}
+.mainbg{
+  width:100%;
+  
+  height: 100vh;
+ 
+  background-image:url("images/christmas-celebration-concept.jpg");
+  background-position:center center;
+background-size:cover;
+  background-repeat:no-repeat;
+  position: relative;
+}
+.header ul {
+  list-style-type: none;
+margin-left: 0px;
+
+
+}
+.home__title2 {
+  
+  padding-left: 850px;
+  padding-top: 200px;
+  margin-top: 1.5rem;
+
+}
+  
+}
+@media screen and (max-width: 1195px) {
+
+  .home__title2 {
+  
+    padding-left: 750px;
+    padding-top: 200px;
+    margin-top: 1.5rem;
+    font-size: 3em;
+  
+  }
+  .home__title1 {
+
+    font-size: 3em;
+    padding-left: 230px;;
+   
+}
+.facts{
+  margin-top: 70px;
+  padding-left: 455px;
+  position: relative;
+  color: rgba(118,195,204,255);
+  
+}
+}
+@media screen and (max-width: 1195px) {
+  .cards{
+  
+    align-items: center;
+    justify-content: space-around;
+    color: aliceblue;
+    margin-top: 0px;
+    height: 2300px;
+    width: 100%;
+}
+.container1 {
+  width: 100%;
+  font-size: smaller;
+  display: block;
+  padding-left: 20px;
+  height: 500px;
+  perspective: 800px;
+  float: left;
+  
+}.container {
+  padding-left: 20px;
+  font-size: smaller;
+  width: 100%;  height: 500px;
+  perspective: 800px;
+  float: left;
+
+}
+.facts{
+  margin-top: 0px;
+  padding-left: 205px;
+  position: relative;
+  color: rgba(118,195,204,255);
+  
+}
+.history{
+  padding-top: 50px;
+  width: 100%;
+  height: 1244px;
+  margin-top: 50px;
+}
+.hisimage{
+  margin-top: 77px;
+  float: left;
+  width: 100%;
+  padding-left: 17px;
+}
+.hispara{
+  height: 543px;
+  width:100%;
+  padding-top: 30px;
+  color:rgba(52,110,134,255);
+  font-size: medium;
+  float: left;
+}
+.home__title2 {
+  
+  padding-left: 30px;
+  padding-top: 0px;
+  margin-top: 0rem;
+  font-size: 2.5em;
+
+}
+.home__title1 {
+
+  font-size: 2.5em;
+  padding-left: 30px;;
+  padding-top: 0px;
+
+}
+}
