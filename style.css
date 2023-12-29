@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;500;600&display=swap");
 
+
+
 *
 {
     margin:0;
@@ -284,24 +286,21 @@ header ul li a:hover
 
   }
   .home__title1 {
-    color: var(--white-color);
     font-size: 5em;
-    font-family: var(--second-font);
+    
     padding-left: 330px;;
     padding-top: 2.0rem;
     color: aliceblue;
-    font-family: "Merry Christmas";
+    font-family: 'Dancing Script', cursive;
     font-style: italic;
 }
 .home__title2 {
-  color: var(--white-color);
   font-size: 5em;
-  font-family: var(--second-font);
   padding-left: 1000px;
   padding-top: 200px;
   margin-top: 1.5rem;
   color: aliceblue;
-  font-family: "Merry Christmas";
+  font-family: 'Dancing Script', cursive;
   font-style: italic;
 }
 @media screen and (max-width: 1430px) {
@@ -440,7 +439,6 @@ margin-left: 0px;
   height: 543px;
   width:100%;
   padding-top: 30px;
-  color:rgba(52,110,134,255);
   font-size: medium;
   float: left;
 }
