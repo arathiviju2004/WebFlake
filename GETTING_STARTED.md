@@ -1,26 +1,14 @@
-# WebFlake
+## Get Started
 
-"WebFlake" is a Christmas-themed hackathon for all techies out there.
+🎄 Welcome to the WebFlake Christmas Project! Immerse yourself in the holiday spirit with our festive webpage. Follow these steps to experience the magic:
 
-Your task is to create a Christmas Themed webpage using HTML, CSS, and JavaScript to showcase your skills. Judging criteria include creativity, accessibility, and programming skills.
+### Option 1: Run Locally
 
-> Note: It's a frontend project, so no backend is required!!!
+1. **Clone the Repository:**
+   ```bash
+   git clone <your-repo-url>
+   
+2. Open the Webpage:
 
-Google is your buddy
-
-## Getting started
-
-1. Fork the repo
-2. Clone the repo
-
-    ```shell
-    git clone <your-repo-url>
-    ```
-
-3. start coding!!!!
-
-## Submission
-
-1. Update the [README.md](README.md)
-
-> Before the due date
+Launch the index.html file in your favorite web browser.
+Witness the enchanting Christmas-themed design, complete with wavy effects and delightful surprises.
